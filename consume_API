@@ -9,6 +9,7 @@ def main():
     print(df1)
     print(df1.to_dict('split'))
     url = 'http://localhost:8050/predict'
+    headers = {'content-type': 'application/json'}
     d = '[{"OAUT_OVRAL_BAL_LOAN_VAL":41,"INT_RT":0,"OPEN_STAT_TRD_AGG_BAL":39405},{"OAUT_OVRAL_BAL_LOAN_VAL":41,"INT_RT":0,"OPEN_STAT_TRD_AGG_BAL":39405}]'
     df2 = pd.read_json(d, orient='records')
     j = df2.to_json(orient='split')
