@@ -1,0 +1,28 @@
+import urllib.request
+from pandas.io.json import json_normalize,json
+from urllib.error import HTTPError
+import requests
+import pandas as pd
+
+def main():
+    df1 = pd.DataFrame({'a': ['red', 'yellow', 'blue'], 'b': [0.5, 0.25, 0.125]})
+    print(df1)
+    print(df1.to_dict('split'))
+    url = 'http://localhost:8050/predict'
+    d = '[{"OAUT_OVRAL_BAL_LOAN_VAL":41,"INT_RT":0,"OPEN_STAT_TRD_AGG_BAL":39405},{"OAUT_OVRAL_BAL_LOAN_VAL":41,"INT_RT":0,"OPEN_STAT_TRD_AGG_BAL":39405}]'
+    df2 = pd.read_json(d, orient='records')
+    j = df2.to_json(orient='split')
+    df = pd.read_json(j, orient='split')
+    print(j)
+    print(df)
+    #data = df.apply(lambda x: x.to_json(), axis=1)
+    #d = [dict([(colname, row[i]) for i, colname in enumerate(df.columns)]) for row in df.values]
+    for data in df.to_dict(orient='split'):
+        print(data)
+    exit(0)
+    r = requests.post(url, data=json.dumps(d), headers=headers)
+    json_data = json.loads(r.text)
+    print(json_data)
+
+if __name__ == '__main__':
+    main()
