@@ -1,0 +1,7 @@
+2019-05-23 00:53:36,758 - __main__ - DEBUG - 0014 - This is a debug message
+2019-05-23 00:53:36,758 - __main__ - INFO - 0015 - This is a info message
+2019-05-23 00:53:36,758 - __main__ - WARNING - 0016 - This is warning message
+2019-05-23 00:53:36,758 - __main__ - ERROR - 0017 - This is a error message
+2019-05-23 00:53:36,759 - __main__ - CRITICAL - 0018 - This is critical message
+2019-05-23 00:53:36,759 - log_class - INFO - 0016 - Name: Chittaranjan
+2019-05-23 00:53:36,759 - log_class - INFO - 0017 - Age: 27
