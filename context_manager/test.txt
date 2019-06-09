@@ -1,0 +1,40 @@
+Writing using contextmanager : 0
+Writing using contextmanager : 1
+Writing using contextmanager : 2
+Writing using contextmanager : 3
+Writing using contextmanager : 4
+Writing using contextmanager : 5
+Writing using contextmanager : 6
+Writing using contextmanager : 7
+Writing using contextmanager : 8
+Writing using contextmanager : 9
+wrting using class as context manager : 0
+wrting using class as context manager : 1
+wrting using class as context manager : 2
+wrting using class as context manager : 3
+wrting using class as context manager : 4
+wrting using class as context manager : 5
+wrting using class as context manager : 6
+wrting using class as context manager : 7
+wrting using class as context manager : 8
+wrting using class as context manager : 9
+Writing using contextmanager : 0
+Writing using contextmanager : 1
+Writing using contextmanager : 2
+Writing using contextmanager : 3
+Writing using contextmanager : 4
+Writing using contextmanager : 5
+Writing using contextmanager : 6
+Writing using contextmanager : 7
+Writing using contextmanager : 8
+Writing using contextmanager : 9
+wrting using class as context manager : 0
+wrting using class as context manager : 1
+wrting using class as context manager : 2
+wrting using class as context manager : 3
+wrting using class as context manager : 4
+wrting using class as context manager : 5
+wrting using class as context manager : 6
+wrting using class as context manager : 7
+wrting using class as context manager : 8
+wrting using class as context manager : 9
