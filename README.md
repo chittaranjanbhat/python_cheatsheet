@@ -175,3 +175,51 @@ if __name__ == '__main__':
 # (venv) C:\Users\chitt\PycharmProjects>python if_condition.py -m zzz
 # Mode selected to serve prediction zzz
 # wrong option selected, options are: clipper,flask,automl. example: test.py -m flask
+
+
+
+
+
+
+
+
+
+
+[loggers]
+keys=root
+
+[handlers]
+keys=stream_handler,file_handler
+
+[formatters]
+keys=formatter
+
+[logger_root]
+level=DEBUG
+handlers=stream_handler,file_handler
+
+[logger_main]
+level=DEBUG
+handlers=stream_handler,file_handler
+qualname=compiler.parser
+
+
+[logger_ModelTrainPipeline]
+level=DEBUG
+handlers=stream_handler,file_handler
+qualname=compiler.parser
+
+[handler_stream_handler]
+class=StreamHandler
+level=DEBUG
+formatter=formatter
+args=(sys.stderr,)
+
+[handler_file_handler]
+class=FileHandler
+level=DEBUG
+formatter=formatter
+args=('logs\\churn.log', 'a')
+
+[formatter_formatter]
+format='%(asctime)s - %(name)s - %(levelname)-4s - %(lineno)04d - %(message)s'
