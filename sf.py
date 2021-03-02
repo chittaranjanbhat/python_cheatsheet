@@ -6,8 +6,8 @@ import sys
 
 # get the DDL from the Snowflake table
 ctx = snowflake.connector.connect(
-    user='Philpo',
-    password='pilfer11**Sf',
+    user='',
+    password='',
     account='taa42050.us-east-1'
     )
 cs = ctx.cursor()
