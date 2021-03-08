@@ -1,0 +1,68 @@
+1.What is string slicing
+string[start:end:step]
+
+2.What is generator in Python
+Generator is a method to create iterable objects in python. Creating generators are same as creating functions. Instead of return statement we have to use yield in generator function
+
+3.How to make a list from comma separated inputs
+a = "A,B,C,D,E"
+print(a.split(','))
+
+4.What is the difference between ‘is’ and ‘==’ in Python
+== compares the values of two objects whereas the is keyword checks whether two objects are same or not
+
+5.What are the difference between List and Tuple
+list - mutable
+tuple - immutale
+
+5. what is Deep Copy
+The deep copy method creates independent copy of an object. If we edit the element in a copied object, that does not affect the other object
+
+6.How do you copy an object in Python?
+In Python, the assignment statement (= operator) does not copy objects. Instead, it creates a binding between the existing object and the target variable name. To create copies of an object in Python, we need to use the copy module
+
+7. What is the difference between Shallow Copy and Deep Copy
+Shallow Copy is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object. If either of the values are references to other objects, just the reference addresses for the same are copied.
+Deep Copy copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.
+
+8. Have you created Virtual env using python?
+how do you create one and what's the use?
+
+9. explain loc and iloc
+
+10. iterate over a Pandas DataFrame
+iterrows()
+
+11. have you used pandasql
+
+12. How you rename and reindex in pandas
+
+13. How will you add a column to a pandas DataFrame
+
+14. How can we convert a Series to DataFrame
+
+15. Reindexing In Pandas
+
+16. Why numpy, give me example where you used
+
+17. Let list1 = ['s', 'r'] and list2 = ['a', 'a'], what is the output of ["".join([i, j]) for i, j in zip(list1, list2)]?
+output :  ['sa', 'ra']
+
+18.  What is the output of the below program?
+>>>names = ['Chris', 'Jack', 'John', 'Daman']
+>>>print(names[-1][-1])
+output is: n
+
+19. Can you use enumerate on subjects and tell me how it's output will look like : subjects = ('Python', 'Interview', 'Questions')
+Answer:
+for i, subject in enumerate(subjects):
+print(i, subject)
+Output:
+0 Python
+1 Interview
+2 Questions
+
+20. how to unpack tuble, Suppose we have a tuple nums=(1,2,3). can we unpack its values into the variables a, b, and c
+Answer :
+>>> nums=(1,2,3)
+>>> a,b,c=nums
